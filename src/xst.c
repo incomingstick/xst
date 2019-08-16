@@ -1366,7 +1366,7 @@ brelease(XEvent *e)
 		return;
 	}
 
-	if (e->xbutton.button == Button2) {
+	if (e->xbutton.button == Button3) {
 		selpaste(NULL);
 	} else if (e->xbutton.button == Button1) {
 		if (sel.mode == SEL_READY) {
