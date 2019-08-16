@@ -64,6 +64,7 @@ static char stty_args[] = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 static unsigned int xfps = 120;
 static unsigned int actionfps = 30;
 static char *termname = "xst-256color";
+static char *pastemouse = "right";
 static char *colorname[] = {
 	"#1e1e1e",
 	"#cf6a4c",
