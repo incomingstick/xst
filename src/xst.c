@@ -1366,7 +1366,7 @@ brelease(XEvent *e)
 		return;
 	}
 
-	if (e->xbutton.button == Button2) {
+	if (e->xbutton.button == ((pastemouse == "right") ? Button2 : Button3)) {
 		selpaste(NULL);
 	} else if (e->xbutton.button == Button1) {
 		if (sel.mode == SEL_READY) {
@@ -4869,6 +4869,8 @@ xrdb_load(void)
 		XRESOURCE_LOAD_STRING("font", font);
 		XRESOURCE_LOAD_STRING("termname", termname);
 		XRESOURCE_LOAD_STRING("shell", shell);
+
+		XRESOURCE_LOAD_STRING("paste-mouse-button", pastemouse);
 
 		XRESOURCE_LOAD_INTEGER("xfps", xfps);
 		XRESOURCE_LOAD_INTEGER("actionfps", actionfps);
