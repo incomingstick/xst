@@ -4871,6 +4871,9 @@ xrdb_load(void)
 		XRESOURCE_LOAD_STRING("shell", shell);
 
 		XRESOURCE_LOAD_STRING("paste-mouse-button", pastemouse);
+		
+		XRESOURCE_LOAD_INTEGER("cols", cols);
+		XRESOURCE_LOAD_INTEGER("rows", rows);
 
 		XRESOURCE_LOAD_INTEGER("xfps", xfps);
 		XRESOURCE_LOAD_INTEGER("actionfps", actionfps);

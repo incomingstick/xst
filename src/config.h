@@ -2,8 +2,8 @@
 
 #define histsize 2000
 
-static unsigned int cols = 80;
-static unsigned int rows = 24;
+static unsigned int cols = 80; // width
+static unsigned int rows = 24; // height
 
 /* ref: http://freedesktop.org/software/fontconfig/fontconfig-user.html */
 static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true;";
@@ -87,7 +87,7 @@ static char *colorname[] = {
 
 	"#a7a7a7", 		/* [default] defaultfg */
 	"#1e1e1e",		/* [default] defaultbg */
-	"#a7a7a7",              /* [default] defaultcs */
+	"#a7a7a7",      /* [default] defaultcs */
 	"#1e1e1e",		/* [default] defaultrcs */
 	"black",
 };
