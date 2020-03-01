@@ -195,8 +195,8 @@ enum escape_state {
 	ESC_ALTCHARSET = 8,
 	ESC_STR_END    = 16, /* a final string was encountered */
 	ESC_TEST       = 32, /* Enter in test mode */
-  ESC_UTF8       = 64,
-  ESC_DCS        =128,
+    ESC_UTF8       = 64,
+    ESC_DCS        =128,
 };
 
 enum window_state {
@@ -1366,7 +1366,7 @@ brelease(XEvent *e)
 		return;
 	}
 
-	if (e->xbutton.button == ((pastemouse == "right") ? Button2 : Button3)) {
+	if (e->xbutton.button == (strcmp(pastemouse, "right") == 0 ? Button2 : Button3)) {
 		selpaste(NULL);
 	} else if (e->xbutton.button == Button1) {
 		if (sel.mode == SEL_READY) {
